@@ -9,7 +9,7 @@ while(1):
 	s = str(con.readline(), "utf-8")
 	data = s.split(";")
 	if len(data) == 7:
-		url = "http://localhost:3000/tambahdata/"+data[0]+","+data[1]+","+data[2]+","+data[3]+","+data[4]+","+data[5]+","+data[6]
+		url = "http://localhost:3000/api/data/tambah/sensor/"+data[0]+"/data/"+data[1]+","+data[2]+","+data[3]+","+data[4]+","+data[5]+","+data[6]
 		urllib.request.urlopen(url)
 		print("ok")
 	else:
